@@ -1,0 +1,344 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_CLayout.cshtml";
+}
+
+<div class="col-md-7 col-lg-8 col-xl-9">
+    <div class="row">
+        <div class="col-md-5 col-5">
+            <div class="breadcrumb-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <h2 class="breadcrumb-title">Blogs List</h2>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-2" style="background-color:white !important;"></div>
+        <div class="col-md-5 col-5">
+
+            <a href="#Add_Blog_details" data-toggle="modal" class="btn btn-primary float-right mt-2">Add New Blog</a>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0" id="ScrapperList">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Publish Date</th>
+                                    <th>Content</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 class="table-avatar">
+                                            <a href="patient-profile.html">Harry William</a>
+                                        </h2>
+                                    </td>
+                                    <td>14 Nov 2019 <span class="d-block text-info">11.00 AM</span></td>
+                                    <td>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    </td>
+                                    <td class="text-right">
+                                        <div class="table-action">
+                                            <a href="@Url.Action("Index","Blogs")" class="btn btn-sm bg-info-light">
+                                                <i class="far fa-eye"></i> View
+                                            </a>
+
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                <i class="fas fa-pen"></i> Edit
+                                            </a>
+                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="~/assets/js/jquery-3.5.1.js"></script>
+
+<script src="~/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="~/assets/plugins/datatables/datatables.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $('#ScrapperList').DataTable({
+            searching: true,
+            "ordering": true
+        });
+    });
+</script>

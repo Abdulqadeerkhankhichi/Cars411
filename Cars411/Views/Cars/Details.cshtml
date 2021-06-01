@@ -1,0 +1,347 @@
+﻿
+<head>
+    <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title: {
+		text: ""
+	},
+	axisY: {
+		title: ""
+	},
+	data: [{
+		type: "column",
+		dataPoints: @Html.Raw(ViewBag.DataPoints)
+	}]
+});
+chart.render();
+
+}
+    </script>
+</head>
+
+<div class="breadcrumb-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-12">
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <!-- Doctor Widget -->
+    <div class="card">
+        <div class="card-body">
+            <div class="doctor-widget">
+                <div class="doc-info-left">
+                    <div class="doctor-img1">
+                        <img src="~/assets/img/Cars/bmw.png" class="img-fluid" alt="Image">
+                    </div>
+                    <div class="doc-info-cont">
+                        <h4 class="doc-name">BMWX - 2013</h4>
+
+                    </div>
+                  
+                </div>
+                <div class="doc-info-right" style="flex: 0 0 400px !important; max-width:none !important;">
+                    <div id="chartContainer" style="height: 200px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Doctor Widget -->
+    <!-- Doctor Details Tab -->
+    <div class="card">
+        <div class="card-body pt-0">
+
+
+            <div class="tab-content pt-0">
+
+
+
+                <div role="tabpanel" id="doc_reviews" class="tab-pane active ">
+
+                    <!-- Review Listing -->
+                    <div class="widget review-listing">
+                        <ul class="comments-list">
+
+                            <!-- Comment List -->
+                            <li>
+                                <div class="comment">
+                                    <img class="avatar avatar-sm rounded-circle" alt="User Image" src="~/assets/img/User/patient.jpg">
+                                    <div class="comment-body">
+                                        <div class="meta-data">
+                                            <span class="comment-author">Richard Wilson</span>
+                                            <span class="comment-date">Reviewed 2 Days ago</span>
+                                            <div class="row review-count">
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Comfort</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Safety</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Reliability</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <p class="comment-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation.
+                                            Curabitur non nulla sit amet nisl tempus
+                                        </p>
+                                        <div class="comment-reply">
+                                            <a class="comment-btn" href="#">
+                                                <i class="fas fa-reply"></i> Reply
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Comment Reply -->
+                                <ul class="comments-reply">
+                                    <li>
+                                        <div class="comment">
+                                            <img class="avatar avatar-sm rounded-circle" alt="User Image" src="~/assets/img/User/patient1.jpg">
+                                            <div class="comment-body">
+                                                <div class="meta-data">
+                                                    <span class="comment-author">Charlene Reed</span>
+                                                    <span class="comment-date">Reviewed 3 Days ago</span>
+                                                </div>
+                                                <p class="comment-content">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam.
+                                                    Curabitur non nulla sit amet nisl tempus
+                                                </p>
+                                                <div class="comment-reply">
+                                                    <a class="comment-btn" href="#">
+                                                        <i class="fas fa-reply"></i> Reply
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- /Comment Reply -->
+
+                            </li>
+                            <!-- /Comment List -->
+                            <!-- Comment List -->
+                            <li>
+                                <div class="comment">
+                                    <img class="avatar avatar-sm rounded-circle" alt="User Image" src="~/assets/img/User/patient2.jpg">
+                                    <div class="comment-body">
+                                        <div class="meta-data">
+                                            <span class="comment-author">Travis Trimble</span>
+                                            <span class="comment-date">Reviewed 4 Days ago</span>
+                                            <div class="row review-count">
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Comfort</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Safety</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <h5 class="doc-department">Reliability</h5>
+                                                    <div class="rating">
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <i class="fas fa-star filled"></i>
+                                                        <span class="d-inline-block average-rating">(13)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="comment-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            Ut enim ad minim veniam, quis nostrud exercitation.
+                                            Curabitur non nulla sit amet nisl tempus
+                                        </p>
+                                        <div class="comment-reply">
+                                            <a class="comment-btn" href="#">
+                                                <i class="fas fa-reply"></i> Reply
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+                    <div class="write-review">
+                        <h4>Write a review</h4>
+
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Comfort</label>
+                                        <div class="star-rating">
+                                            <input id="Cstar-5" type="radio" name="Crating" value="star-5">
+                                            <label for="Cstar-5" title="5 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Cstar-4" type="radio" name="Crating" value="star-4">
+                                            <label for="Cstar-4" title="4 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Cstar-3" type="radio" name="Crating" value="star-3">
+                                            <label for="Cstar-3" title="3 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Cstar-2" type="radio" name="Crating" value="star-2">
+                                            <label for="Cstar-2" title="2 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Cstar-1" type="radio" name="Crating" value="star-1">
+                                            <label for="Cstar-1" title="1 star">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Safety</label>
+                                        <div class="star-rating">
+                                            <input id="Sstar-5" type="radio" name="Srating" value="star-5">
+                                            <label for="Sstar-5" title="5 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Sstar-4" type="radio" name="Srating" value="star-4">
+                                            <label for="Sstar-4" title="4 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Sstar-3" type="radio" name="Srating" value="star-3">
+                                            <label for="Sstar-3" title="3 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Sstar-2" type="radio" name="Srating" value="star-2">
+                                            <label for="Sstar-2" title="2 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Sstar-1" type="radio" name="Srating" value="star-1">
+                                            <label for="Sstar-1" title="1 star">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Reliability</label>
+                                        <div class="star-rating">
+                                            <input id="Rstar-5" type="radio" name="Rrating" value="star-5">
+                                            <label for="Rstar-5" title="5 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Rstar-4" type="radio" name="Rrating" value="star-4">
+                                            <label for="Rstar-4" title="4 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Rstar-3" type="radio" name="Rrating" value="star-3">
+                                            <label for="Rstar-3" title="3 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Rstar-2" type="radio" name="Rrating" value="star-2">
+                                            <label for="Rstar-2" title="2 stars">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                            <input id="Rstar-1" type="radio" name="Rrating" value="star-1">
+                                            <label for="Rstar-1" title="1 star">
+                                                <i class="active fa fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Your review</label>
+                                <textarea id="review_desc" maxlength="100" class="form-control"></textarea>
+
+                                <div class="d-flex justify-content-between mt-3"><small class="text-muted"><span id="chars">100</span> characters remaining</small></div>
+                            </div>
+
+                            <div class="submit-section">
+                                <button type="submit" class="btn btn-primary submit-btn">Add Review</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
